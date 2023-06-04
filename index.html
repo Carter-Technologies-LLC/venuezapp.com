@@ -1,593 +1,546 @@
-<!-- 
-THEME: Small Apps | Bootstrap App Landing Template
-VERSION: 1.0.0
-AUTHOR: Themefisher
-
-HOMEPAGE: https://themefisher.com/products/small-apps-free-app-landing-page-template/
-DEMO: https://demo.themefisher.com/small-apps/
-GITHUB: https://github.com/themefisher/Small-Apps-Bootstrap-App-Landing-Template
-
-Get HUGO Version : https://themefisher.com/products/small-apps-hugo-app-landing-theme/
-
-WEBSITE: https://themefisher.com
-TWITTER: https://twitter.com/themefisher
-FACEBOOK: https://www.facebook.com/themefisher
--->
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html  lang="en">
+	<head>
+		<meta charset="utf-8" >
+		<title>Main page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="i/favicon-default.png">
+		<!-- AOS 3.0.0-beta.6 plugin CSS (Animations) -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&subset=latin&display=swap" rel="stylesheet">
+		<!-- Startup CSS + Bootstrap CSS (Styles for all blocks) - Remove ".min" if you want to edit a css code -->
+		<link href="css/styles.min.css" rel="stylesheet" />
+		<!-- jQuery 3.6.0 (uncomment line below if you need jQuery) -->
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+		<!-- Open graph settings (social networks sharing settings) -->
+		<meta name='twitter:card' content='summary_large_image'>
+		<!-- Open graph settings end -->
+	</head> 
+	<body>
 
-  <!-- Basic Page Needs
-  ================================================== -->
-  <meta charset="utf-8">
-  <title>Small Apps | Bootstrap App Landing Template</title>
-
-  <!-- Mobile Specific Metas
-  ================================================== -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Bootstrap App Landing Template">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name="author" content="Themefisher">
-  <meta name="generator" content="Themefisher Small Apps Template v1.0">
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
-  
-  <!-- PLUGINS CSS STYLE -->
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
-  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="plugins/aos/aos.css">
-
-  <!-- CUSTOM CSS -->
-  <link href="css/style.css" rel="stylesheet">
-
-</head>
-
-<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
-
-
-<nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0">
-  <div class="container">
-    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="ti-menu"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Home
-            <span><i class="ti-angle-down"></i></span>
-          </a>
-          <!-- Dropdown list -->
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item active" href="index.html">Homepage</a></li>
-            <li><a class="dropdown-item" href="homepage-2.html">Homepage 2</a></li>
-            <li><a class="dropdown-item active3" href="homepage-3.html">Homepage 3</a></li>
-
-            <li class="dropdown dropdown-submenu dropright">
-              <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0301" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
-
-              <ul class="dropdown-menu" aria-labelledby="dropdown0301">
-                <li><a class="dropdown-item" href="index.html">Submenu 11</a></li>
-                <li><a class="dropdown-item" href="index.html">Submenu 12</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown @@pages">
-          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Pages
-            <span><i class="ti-angle-down"></i></span>
-          </a>
-          <!-- Dropdown list -->
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item @@team" href="team.html">Team</a></li>
-            <li><a class="dropdown-item @@career" href="career.html">Career</a></li>
-            <li><a class="dropdown-item @@blog" href="blog.html">Blog</a></li>
-            <li><a class="dropdown-item @@blogSingle" href="blog-single.html">Blog Single</a></li>
-            <li><a class="dropdown-item @@privacy" href="privacy-policy.html">Privacy</a></li>
-            <li><a class="dropdown-item @@faq" href="FAQ.html">FAQ</a></li>
-            <li><a class="dropdown-item" href="sign-in.html">Sign In</a></li>
-            <li><a class="dropdown-item" href="sign-up.html">Sign Up</a></li>
-            <li><a class="dropdown-item" href="404.html">404</a></li>
-            <li><a class="dropdown-item" href="comming-soon.html">Coming Soon</a></li>
-
-            <li class="dropdown dropdown-submenu dropleft">
-              <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0501" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
-
-              <ul class="dropdown-menu" aria-labelledby="dropdown0501">
-                <li><a class="dropdown-item" href="index.html">Submenu 21</a></li>
-                <li><a class="dropdown-item" href="index.html">Submenu 22</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item @@about">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item @@contact">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!--====================================
-=            Hero Section            =
-=====================================-->
-<section class="section gradient-banner">
-	<div class="shapes-container">
-		<div class="shape" data-aos="fade-down-left" data-aos-duration="1500" data-aos-delay="100"></div>
-		<div class="shape" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100"></div>
-		<div class="shape" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="200"></div>
-		<div class="shape" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"></div>
-		<div class="shape" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="100"></div>
-		<div class="shape" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="100"></div>
-		<div class="shape" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300"></div>
-		<div class="shape" data-aos="fade-down-right" data-aos-duration="500" data-aos-delay="200"></div>
-		<div class="shape" data-aos="fade-down-right" data-aos-duration="500" data-aos-delay="100"></div>
-		<div class="shape" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="500"></div>
-		<div class="shape" data-aos="fade-up-right" data-aos-duration="500" data-aos-delay="200"></div>
-		<div class="shape" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="100"></div>
-		<div class="shape" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0"></div>
-		<div class="shape" data-aos="fade-down" data-aos-duration="500" data-aos-delay="0"></div>
-		<div class="shape" data-aos="fade-up-right" data-aos-duration="500" data-aos-delay="100"></div>
-		<div class="shape" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="0"></div>
-	</div>
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-md-6 order-2 order-md-1 text-center text-md-left">
-				<h1 class="text-white font-weight-bold mb-4">Showcase your app with Small Apps</h1>
-				<p class="text-white mb-5">Besides its beautiful design. Laapp is an incredibly rich core framework for you to
-					showcase your App.</p>
-				<a href="FAQ.html" class="btn btn-main-md">Download Now</a>
-			</div>
-			<div class="col-md-6 text-center order-1 order-md-2">
-				<img class="img-fluid" src="images/mobile.png" alt="screenshot">
-			</div>
-		</div>
-	</div>
-</section>
-<!--====  End of Hero Section  ====-->
-
-<section class="section pt-0 position-relative pull-top">
-	<div class="container">
-		<div class="rounded shadow p-5 bg-white">
-			<div class="row">
-				<div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
-					<i class="ti-paint-bucket text-primary h1"></i>
-					<h3 class="mt-4 text-capitalize h5 ">themes made easy</h3>
-					<p class="regular text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam non, recusandae
-						tempore ipsam dignissimos molestias.</p>
-				</div>
-				<div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
-					<i class="ti-shine text-primary h1"></i>
-					<h3 class="mt-4 text-capitalize h5 ">powerful design</h3>
-					<p class="regular text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam non, recusandae
-						tempore ipsam dignissimos molestias.</p>
-				</div>
-				<div class="col-lg-4 col-md-12 mt-5 mt-lg-0 text-center">
-					<i class="ti-thought text-primary h1"></i>
-					<h3 class="mt-4 text-capitalize h5 ">creative content</h3>
-					<p class="regular text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam non, recusandae
-						tempore ipsam dignissimos molestias.</p>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!--==================================
-=            Feature Grid            =
-===================================-->
-<section class="feature section pt-0">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 ml-auto justify-content-center">
-				<!-- Feature Mockup -->
-				<div class="image-content" data-aos="fade-right">
-					<img class="img-fluid" src="images/feature/feature-new-01.jpg" alt="iphone">
-				</div>
-			</div>
-			<div class="col-lg-6 mr-auto align-self-center">
-				<div class="feature-content">
-					<!-- Feature Title -->
-					<h2>Increase your productivity with <a
-							href="https://themefisher.com/products/small-apps-free-app-landing-page-template/">Small Apps</a></h2>
-					<!-- Feature Description -->
-					<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat.</p>
-				</div>
-				<!-- Testimonial Quote -->
-				<div class="testimonial">
-					<p>
-						"InVision is a window into everything that's being designed at Twitter. It gets all of our best work in one
-						place."
-					</p>
-					<ul class="list-inline meta">
-						<li class="list-inline-item">
-							<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="">
-						</li>
-						<li class="list-inline-item">Jonathon Andrew , Themefisher.com</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="feature section pt-0">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 ml-auto align-self-center">
-				<div class="feature-content">
-					<!-- Feature Title -->
-					<h2>Increase your productivity with <a
-							href="https://themefisher.com/products/small-apps-free-app-landing-page-template/">Small Apps</a></h2>
-					<!-- Feature Description -->
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-						dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-						ea commodo consequat.</p>
-				</div>
-				<!-- Testimonial Quote -->
-				<div class="testimonial">
-					<p>
-						"InVision is a window into everything that's being designed at Twitter. It gets all of our best work in one
-						place."
-					</p>
-					<ul class="list-inline meta">
-						<li class="list-inline-item">
-							<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="">
-						</li>
-						<li class="list-inline-item">Jonathon Andrew , Themefisher.com</li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-6 mr-auto justify-content-center">
-				<!-- Feature mockup -->
-				<div class="image-content" data-aos="fade-left">
-					<img class="img-fluid" src="images/feature/feature-new-02.jpg" alt="ipad">
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--====  End of Feature Grid  ====-->
-
-<!--==============================
-=            Services            =
-===============================-->
-<section class="service section bg-gray">
-	<div class="container-fluid p-0">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="section-title">
-					<h2>An Interface For Lifestyle</h2>
-					<p><a href="https://themefisher.com/products/small-apps-free-app-landing-page-template/">Small Apps</a> makes
-						it easy to stay on top of your Life Style. No late tasks. No gimmicks.</p>
-				</div>
-			</div>
-		</div>
-		<div class="row no-gutters">
-			<div class="col-lg-6 align-self-center">
-				<!-- Feature Image -->
-				<div class="service-thumb left" data-aos="fade-right">
-					<img class="img-fluid" src="images/feature/iphone-ipad.jpg" alt="iphone-ipad">
-				</div>
-			</div>
-			<div class="col-lg-5 mr-auto align-self-center">
-				<div class="service-box">
-					<div class="row align-items-center">
-						<div class="col-md-6 col-xs-12">
-							<!-- Service 01 -->
-							<div class="service-item">
-								<!-- Icon -->
-								<i class="ti-bookmark"></i>
-								<!-- Heading -->
-								<h3>Easy Prototyping</h3>
-								<!-- Description -->
-								<p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur aliquet quam id dui</p>
-							</div>
-						</div>
-						<div class="col-md-6 col-xs-12">
-							<!-- Service 01 -->
-							<div class="service-item">
-								<!-- Icon -->
-								<i class="ti-pulse"></i>
-								<!-- Heading -->
-								<h3>Sensor Bridge</h3>
-								<!-- Description -->
-								<p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur aliquet quam id dui</p>
-							</div>
-						</div>
-						<div class="col-md-6 col-xs-12">
-							<!-- Service 01 -->
-							<div class="service-item">
-								<!-- Icon -->
-								<i class="ti-bar-chart"></i>
-								<!-- Heading -->
-								<h3>Strategist</h3>
-								<!-- Description -->
-								<p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur aliquet quam id dui</p>
-							</div>
-						</div>
-						<div class="col-md-6 col-xs-12">
-							<!-- Service 01 -->
-							<div class="service-item">
-								<!-- Icon -->
-								<i class="ti-panel"></i>
-								<!-- Heading -->
-								<h3>Art Direction</h3>
-								<!-- Description -->
-								<p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur aliquet quam id dui</p>
-							</div>
-						</div>
+<!-- Navigation 5 -->
+	<nav class="sticky-top py-4 py-lg-7 bg-bg-1">
+		<div class="d-block d-lg-none">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-3" data-aos="fade-down" data-aos-delay="0">
+						<a class="btn btn-width-equal-height d-lg-none rounded-circle custom-mobile-nav-btn" data-bs-toggle="offcanvas" data-bs-target="#custom-id-sr953hmt">
+							<svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-light-1">
+								<path d="M2.00016 5.33333H14.0002C14.177 5.33333 14.3465 5.2631 14.4716 5.13807C14.5966 5.01305 14.6668 4.84348 14.6668 4.66667C14.6668 4.48986 14.5966 4.32029 14.4716 4.19526C14.3465 4.07024 14.177 4 14.0002 4H2.00016C1.82335 4 1.65378 4.07024 1.52876 4.19526C1.40373 4.32029 1.3335 4.48986 1.3335 4.66667C1.3335 4.84348 1.40373 5.01305 1.52876 5.13807C1.65378 5.2631 1.82335 5.33333 2.00016 5.33333ZM14.0002 10.6667H2.00016C1.82335 10.6667 1.65378 10.7369 1.52876 10.8619C1.40373 10.987 1.3335 11.1565 1.3335 11.3333C1.3335 11.5101 1.40373 11.6797 1.52876 11.8047C1.65378 11.9298 1.82335 12 2.00016 12H14.0002C14.177 12 14.3465 11.9298 14.4716 11.8047C14.5966 11.6797 14.6668 11.5101 14.6668 11.3333C14.6668 11.1565 14.5966 10.987 14.4716 10.8619C14.3465 10.7369 14.177 10.6667 14.0002 10.6667ZM14.0002 7.33333H2.00016C1.82335 7.33333 1.65378 7.40357 1.52876 7.5286C1.40373 7.65362 1.3335 7.82319 1.3335 8C1.3335 8.17681 1.40373 8.34638 1.52876 8.4714C1.65378 8.59643 1.82335 8.66667 2.00016 8.66667H14.0002C14.177 8.66667 14.3465 8.59643 14.4716 8.4714C14.5966 8.34638 14.6668 8.17681 14.6668 8C14.6668 7.82319 14.5966 7.65362 14.4716 7.5286C14.3465 7.40357 14.177 7.33333 14.0002 7.33333Z">
+								</path>
+							</svg>
+						</a>
+					</div>
+					<div class="col-6 text-center" data-aos="fade-down" data-aos-delay="250">
+						<a href="#">
+							<img src="i/icon-with-name.png" alt="" class="img-fluid w-25" data-aos="fade-down" data-aos-delay="0">
+						</a>
+					</div>
+					<div class="col-3" data-aos="fade-down" data-aos-delay="500">
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<!--====  End of Services  ====-->
-
-
-<!--=================================
-=            Video Promo            =
-==================================-->
-<section class="video-promo section bg-1">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="content-block">
-					<!-- Heading -->
-					<h2>Watch Our Promo Video</h2>
-					<!-- Promotional Speech -->
-					<p>Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et,
-						porttitor at sem. Vivamus </p>
-					<!-- Popup Video -->
-					<a data-fancybox href="https://www.youtube.com/watch?v=jrkvirglgaQ">
-						<i class="ti-control-play video"></i>
+		<img src="https://designmodo.com/startup/app/smiles.php?icon=smile&amp;search=P2lkPTIxMjUwJmluRWRpdG9yPTE=&amp;path=L3N0YXJ0dXAvYXBwL3ByZXZpZXcucGhw&amp;e=MjExMjcz" id="js-get-smile" class="visually-hidden" style="opacity: 0.01;">
+		<div class="offcanvas offcanvas-start custom-dark-offcanvas-bg" id="custom-id-sr953hmt" aria-hidden="true">
+			<div class="offcanvas-header">
+				<a href="#">
+					<img src="i/logo-light.png" srcset="i/logo-light@2x.png 2x" alt="" class="img-fluid">				
+				</a>
+				<a class="btn btn-sm btn-width-equal-height custom-mobile-nav-btn" data-bs-dismiss="offcanvas">
+					<svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-light-2">
+						<path d="M8.9398 8L13.1398 3.80667C13.2653 3.68113 13.3359 3.51087 13.3359 3.33333C13.3359 3.1558 13.2653 2.98554 13.1398 2.86C13.0143 2.73447 12.844 2.66394 12.6665 2.66394C12.4889 2.66394 12.3187 2.73447 12.1931 2.86L7.9998 7.06L3.80646 2.86C3.68093 2.73447 3.51066 2.66394 3.33313 2.66394C3.1556 2.66394 2.98533 2.73447 2.8598 2.86C2.73426 2.98554 2.66374 3.1558 2.66374 3.33333C2.66374 3.51087 2.73426 3.68113 2.8598 3.80667L7.0598 8L2.8598 12.1933C2.79731 12.2553 2.74771 12.329 2.71387 12.4103C2.68002 12.4915 2.6626 12.5787 2.6626 12.6667C2.6626 12.7547 2.68002 12.8418 2.71387 12.9231C2.74771 13.0043 2.79731 13.078 2.8598 13.14C2.92177 13.2025 2.99551 13.2521 3.07675 13.2859C3.15798 13.3198 3.24512 13.3372 3.33313 13.3372C3.42114 13.3372 3.50827 13.3198 3.58951 13.2859C3.67075 13.2521 3.74449 13.2025 3.80646 13.14L7.9998 8.94L12.1931 13.14C12.2551 13.2025 12.3288 13.2521 12.4101 13.2859C12.4913 13.3198 12.5785 13.3372 12.6665 13.3372C12.7545 13.3372 12.8416 13.3198 12.9228 13.2859C13.0041 13.2521 13.0778 13.2025 13.1398 13.14C13.2023 13.078 13.2519 13.0043 13.2857 12.9231C13.3196 12.8418 13.337 12.7547 13.337 12.6667C13.337 12.5787 13.3196 12.4915 13.2857 12.4103C13.2519 12.329 13.2023 12.2553 13.1398 12.1933L8.9398 8Z">
+						</path>
+					</svg>
+				</a>
+			</div>
+			<div class="offcanvas-body">
+				<div>
+					<a href="#" class="fw-bold py-2 d-inline-block text-light-1">
+Home					
 					</a>
 				</div>
+				<div>
+					<a href="#" class="fw-bold py-2 d-inline-block text-light-1">
+Features					
+					</a>
+				</div>
+				<div>
+					<a href="#" class="fw-bold py-2 d-inline-block text-light-1">
+Blog					
+					</a>
+				</div>
+				<div>
+					<a href="#" class="fw-bold py-2 d-inline-block text-light-1">
+Prices					
+					</a>
+				</div>
+				<a href="#" class="btn btn-action-1 btn-sm rounded-2 mt-4">
+Get Started
+				</a>
 			</div>
 		</div>
-	</div>
-</section>
-<!--====  End of Video Promo  ====-->
-
-<!--=================================
-=            Testimonial            =
-==================================-->
-<section class="section testimonial" id="testimonial">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<!-- Testimonial Slider -->
-				<div class="testimonial-slider owl-carousel owl-theme">
-					<!-- Testimonial 01 -->
-					<div class="item">
-						<div class="block shadow">
-							<!-- Speech -->
-							<p>
-								Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin molestie malesuada.
-								Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor
-								sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi,
-								pretium ut lacinia in, elementum id enim.
-							</p>
-							<!-- Person Thumb -->
-							<div class="image">
-								<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="image">
-							</div>
-							<!-- Name and Company -->
-							<cite>Abraham Linkon , Themefisher.com</cite>
-						</div>
+		<div class="d-none d-lg-block">
+			<div class="container">
+				<div class="row justify-content-between align-items-center">
+					<div class="col-3">
+						<a href="#">
+							<img src="i/icon-with-name.png" alt="" class="img-fluid w-25 h-25" data-aos="fade-down" data-aos-delay="0">						
+						</a>
 					</div>
-					<!-- Testimonial 01 -->
-					<div class="item">
-						<div class="block shadow">
-							<!-- Speech -->
-							<p>
-								Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin molestie malesuada.
-								Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor
-								sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi,
-								pretium ut lacinia in, elementum id enim.
-							</p>
-							<!-- Person Thumb -->
-							<div class="image">
-								<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="image">
-							</div>
-							<!-- Name and Company -->
-							<cite>Abraham Linkon , Themefisher.com</cite>
-						</div>
-					</div>
-					<!-- Testimonial 01 -->
-					<div class="item">
-						<div class="block shadow">
-							<!-- Speech -->
-							<p>
-								Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin molestie malesuada.
-								Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor
-								sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi,
-								pretium ut lacinia in, elementum id enim.
-							</p>
-							<!-- Person Thumb -->
-							<div class="image">
-								<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="image">
-							</div>
-							<!-- Name and Company -->
-							<cite>Abraham Linkon , Themefisher.com</cite>
-						</div>
-					</div>
-					<!-- Testimonial 01 -->
-					<div class="item">
-						<div class="block shadow">
-							<!-- Speech -->
-							<p>
-								Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin molestie malesuada.
-								Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor
-								sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi,
-								pretium ut lacinia in, elementum id enim.
-							</p>
-							<!-- Person Thumb -->
-							<div class="image">
-								<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="image">
-							</div>
-							<!-- Name and Company -->
-							<cite>Abraham Linkon , Themefisher.com</cite>
-						</div>
+					<div class="text-end col-9">
+						<a href="#home" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="150">
+Home						
+						</a>
+						<a href="#features" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="250">
+Features						
+						</a>
+						<a href="#pricing" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="400">
+							Pricing
+						</a>
+						<a href="#contact" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="500">
+							Contact
+						</a>
+						<a href="#download" class="ms-4 btn rounded-2 btn-sm btn-outline-action-2" data-aos="fade-down" data-aos-delay="650">
+									Download
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<!--====  End of Testimonial  ====-->
-
-<section class="call-to-action-app section bg-blue">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<h2>It's time to change your mind</h2>
-				<p>Download over 2 million humans .Get <a href="https://themefisher.com/products/small-apps-free-app-landing-page-template/">Small Apps</a> free forever!
-					<br>We say you won’t look back.</p>
-				<ul class="list-inline">
-					<li class="list-inline-item">
-						<a href="" class="btn btn-rounded-icon">
-							<i class="ti-apple"></i>
-							Iphone
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a href="" class="btn btn-rounded-icon">
-							<i class="ti-android"></i>
-							Android
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a href="" class="btn btn-rounded-icon">
-							<i class="ti-microsoft-alt"></i>
-							Windows
-						</a>
-					</li>
-				</ul>
+	</nav>
+	<!-- Application 1 -->
+		<section class="py-10 py-lg-20 text-center bg-bg-1" id="home">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-10 col-xl-8">
+						<img src="i/icon-with-name.png" alt="" class="w-25 h-75 img-fluid mb-0" data-aos="fade-down" data-aos-delay="0">
+						<h2 class="mb-6 text-light-1 text-decoration-underline font-heading display-4" data-aos="fade-up" data-aos-delay="150">
+							The app for all Venues
+						</h2>
+					</div>
+					<div class="col-md-8 col-lg-6 col-xl-5 col-xxl-5 mb-15">
+						<p class="fs-2 mb-0 text-light-2" data-aos="fade-down" data-aos-delay="250">
+							Bars, Greek Life, Food trucks, and much more
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 mb-4 mb-md-0" data-aos="fade-down" data-aos-delay="400">
+						<div class="py-15 h-100 bg-dark-2">
+							<img src="i/non-detailed-view.png" alt="" class="img-fluid mb-6">
+							<h6 class="fs-4 mb-0 text-light-1">
+								List of selected Venue Types
+							</h6>
+						</div>
+					</div>
+					<div class="col-md-6" data-aos="fade-down" data-aos-delay="500">
+						<div class="py-15 h-100 bg-dark-2">
+							<img src="i/detailed-view.png" alt="" class="img-fluid mb-6">
+							<h6 class="fs-4 mb-0 text-light-1">
+								Detailed View of a particular Venue
+							</h6>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-	</div>
-</section>
+		</section>
+		<!--Feature 3-->
+			<section class="py-10 py-lg-20 bg-bg-1" id="features">
+				<div class="container">
+					<h2 class="text-center display-5 mb-lg-20 mb-6 text-light-1 text-decoration-underline" data-aos="fade-down" data-aos-delay="0">
+A Lot of Features							
+					</h2>
+					<div class="row">
+						<div class="mb-8 mb-lg-12 col-lg-4 col-md-6" data-aos="fade-down" data-aos-delay="150">
+							<div class="ps-12 position-relative">
+								<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-action-1 position-absolute top-0 start-0">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3964 0.87C15.5564 -0.29 17.4364 -0.29 18.5964 0.87L31.6264 13.902C32.7864 15.062 32.7864 16.94 31.6264 18.098L18.5964 31.13C17.4364 32.29 15.5584 32.29 14.4004 31.13L1.36637 18.1C1.09049 17.8247 0.871626 17.4977 0.722293 17.1377C0.57296 16.7777 0.496094 16.3917 0.496094 16.002C0.496094 15.6123 0.57296 15.2263 0.722293 14.8663C0.871626 14.5063 1.09049 14.1793 1.36637 13.904L14.3964 0.87ZM17.1964 2.27C17.0107 2.08436 16.7589 1.98007 16.4964 1.98007C16.2338 1.98007 15.982 2.08436 15.7964 2.27L2.76437 15.3C2.57873 15.4857 2.47444 15.7375 2.47444 16C2.47444 16.2625 2.57873 16.5143 2.76437 16.7L15.7964 29.732C15.982 29.9176 16.2338 30.0219 16.4964 30.0219C16.7589 30.0219 17.0107 29.9176 17.1964 29.732L30.2284 16.7C30.414 16.5143 30.5183 16.2625 30.5183 16C30.5183 15.7375 30.414 15.4857 30.2284 15.3L17.1964 2.268V2.27Z">
+									</path>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M24.2073 8.29183C24.3004 8.38473 24.3743 8.49508 24.4247 8.61657C24.4751 8.73806 24.5011 8.8683 24.5011 8.99983C24.5011 9.13137 24.4751 9.26161 24.4247 9.3831C24.3743 9.50459 24.3004 9.61494 24.2073 9.70783L10.2073 23.7078C10.0195 23.8956 9.76486 24.0011 9.49931 24.0011C9.23376 24.0011 8.97908 23.8956 8.79131 23.7078C8.60354 23.5201 8.49805 23.2654 8.49805 22.9998C8.49805 22.7343 8.60354 22.4796 8.79131 22.2918L22.7913 8.29183C22.8842 8.19871 22.9946 8.12482 23.116 8.07441C23.2375 8.024 23.3678 7.99805 23.4993 7.99805C23.6308 7.99805 23.7611 8.024 23.8826 8.07441C24.0041 8.12482 24.1144 8.19871 24.2073 8.29183Z">
+									</path>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M8.79183 8.29183C8.69871 8.38473 8.62482 8.49508 8.57441 8.61657C8.524 8.73806 8.49805 8.8683 8.49805 8.99983C8.49805 9.13137 8.524 9.26161 8.57441 9.3831C8.62482 9.50459 8.69871 9.61494 8.79183 9.70783L22.7918 23.7078C22.9796 23.8956 23.2343 24.0011 23.4998 24.0011C23.7654 24.0011 24.0201 23.8956 24.2078 23.7078C24.3956 23.5201 24.5011 23.2654 24.5011 22.9998C24.5011 22.7343 24.3956 22.4796 24.2078 22.2918L10.2078 8.29183C10.1149 8.19871 10.0046 8.12482 9.8831 8.07441C9.76161 8.024 9.63137 7.99805 9.49983 7.99805C9.3683 7.99805 9.23806 8.024 9.11657 8.07441C8.99508 8.12482 8.88473 8.19871 8.79183 8.29183Z">
+									</path>
+								</svg>
+								<h5 class="mb-4 text-light-1">
+									Many Components																
+								</h5>
+								<p class="mb-0 text-light-2">
+									Many functional components that all work together to give your customers the best experience
+								</p>
+							</div>
+						</div>
+						<div class="mb-8 mb-lg-12 col-lg-4 col-md-6" data-aos="fade-down" data-aos-delay="250">
+							<div class="ps-12 position-relative">
+								<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-action-1 position-absolute top-0 start-0">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 5C0.5 4.20435 0.81607 3.44129 1.37868 2.87868C1.94129 2.31607 2.70435 2 3.5 2H29.5C30.2956 2 31.0587 2.31607 31.6213 2.87868C32.1839 3.44129 32.5 4.20435 32.5 5V27C32.5 27.7956 32.1839 28.5587 31.6213 29.1213C31.0587 29.6839 30.2956 30 29.5 30H3.5C2.70435 30 1.94129 29.6839 1.37868 29.1213C0.81607 28.5587 0.5 27.7956 0.5 27L0.5 5ZM3.5 4C3.23478 4 2.98043 4.10536 2.79289 4.29289C2.60536 4.48043 2.5 4.73478 2.5 5V27C2.5 27.2652 2.60536 27.5196 2.79289 27.7071C2.98043 27.8946 3.23478 28 3.5 28H29.5C29.7652 28 30.0196 27.8946 30.2071 27.7071C30.3946 27.5196 30.5 27.2652 30.5 27V5C30.5 4.73478 30.3946 4.48043 30.2071 4.29289C30.0196 4.10536 29.7652 4 29.5 4H3.5Z">
+									</path>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 30V2H12.5V30H10.5ZM20.5 30V2H22.5V30H20.5Z">
+									</path>
+								</svg>
+								<h5 class="mb-4 text-light-1">
+									Based in USA
+								</h5>
+								<p class="mb-0 text-light-2">
+									100% Built and Maintained in the United States, providing the best customer support possible
+								</p>
+							</div>
+						</div>
+						<div class="mb-8 mb-lg-12 col-lg-4 col-md-6" data-aos="fade-down" data-aos-delay="400">
+							<div class="ps-12 position-relative">
+								<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-action-1 position-absolute top-0 start-0">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M28.5 4H4.5C3.96957 4 3.46086 4.21071 3.08579 4.58579C2.71071 4.96086 2.5 5.46957 2.5 6V26C2.5 26.5304 2.71071 27.0391 3.08579 27.4142C3.46086 27.7893 3.96957 28 4.5 28H28.5C29.0304 28 29.5391 27.7893 29.9142 27.4142C30.2893 27.0391 30.5 26.5304 30.5 26V6C30.5 5.46957 30.2893 4.96086 29.9142 4.58579C29.5391 4.21071 29.0304 4 28.5 4ZM4.5 2C3.43913 2 2.42172 2.42143 1.67157 3.17157C0.921427 3.92172 0.5 4.93913 0.5 6L0.5 26C0.5 27.0609 0.921427 28.0783 1.67157 28.8284C2.42172 29.5786 3.43913 30 4.5 30H28.5C29.5609 30 30.5783 29.5786 31.3284 28.8284C32.0786 28.0783 32.5 27.0609 32.5 26V6C32.5 4.93913 32.0786 3.92172 31.3284 3.17157C30.5783 2.42143 29.5609 2 28.5 2H4.5Z">
+									</path>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M12.4998 17.9998C12.4998 17.7346 12.6052 17.4803 12.7927 17.2927C12.9803 17.1052 13.2346 16.9998 13.4998 16.9998H19.4998C19.7651 16.9998 20.0194 17.1052 20.2069 17.2927C20.3945 17.4803 20.4998 17.7346 20.4998 17.9998C20.4998 18.2651 20.3945 18.5194 20.2069 18.7069C20.0194 18.8945 19.7651 18.9998 19.4998 18.9998H13.4998C13.2346 18.9998 12.9803 18.8945 12.7927 18.7069C12.6052 18.5194 12.4998 18.2651 12.4998 17.9998ZM6.79183 8.29183C6.88473 8.19871 6.99508 8.12482 7.11657 8.07441C7.23806 8.024 7.3683 7.99805 7.49983 7.99805C7.63137 7.99805 7.76161 8.024 7.8831 8.07441C8.00459 8.12482 8.11494 8.19871 8.20783 8.29183L12.2078 12.2918C12.301 12.3847 12.3748 12.4951 12.4253 12.6166C12.4757 12.7381 12.5016 12.8683 12.5016 12.9998C12.5016 13.1314 12.4757 13.2616 12.4253 13.3831C12.3748 13.5046 12.301 13.6149 12.2078 13.7078L8.20783 17.7078C8.02006 17.8956 7.76539 18.0011 7.49983 18.0011C7.23428 18.0011 6.97961 17.8956 6.79183 17.7078C6.60406 17.5201 6.49857 17.2654 6.49857 16.9998C6.49857 16.7343 6.60406 16.4796 6.79183 16.2918L10.0858 12.9998L6.79183 9.70783C6.69871 9.61494 6.62482 9.50459 6.57441 9.3831C6.524 9.26161 6.49805 9.13137 6.49805 8.99983C6.49805 8.8683 6.524 8.73806 6.57441 8.61657C6.62482 8.49508 6.69871 8.38473 6.79183 8.29183Z">
+									</path>
+								</svg>
+								<h5 class="mb-4 text-light-1">
+									Code Efficient
+								</h5>
+								<p class="mb-0 text-light-2">
+									Designed to work perfectly and lightweight to work on a variety of devices
+								</p>
+							</div>
+						</div>
+						<div class="mb-lg-0 mb-8 col-lg-4 col-md-6" data-aos="fade-down" data-aos-delay="500">
+							<div class="ps-12 position-relative">
+								<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-action-1 position-absolute top-0 start-0">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 30C20.213 30 23.774 28.525 26.3995 25.8995C29.025 23.274 30.5 19.713 30.5 16C30.5 12.287 29.025 8.72601 26.3995 6.1005C23.774 3.475 20.213 2 16.5 2C12.787 2 9.22601 3.475 6.6005 6.1005C3.975 8.72601 2.5 12.287 2.5 16C2.5 19.713 3.975 23.274 6.6005 25.8995C9.22601 28.525 12.787 30 16.5 30ZM32.5 16C32.5 20.2435 30.8143 24.3131 27.8137 27.3137C24.8131 30.3143 20.7435 32 16.5 32C12.2565 32 8.18687 30.3143 5.18629 27.3137C2.18571 24.3131 0.5 20.2435 0.5 16C0.5 11.7565 2.18571 7.68687 5.18629 4.68629C8.18687 1.68571 12.2565 0 16.5 0C20.7435 0 24.8131 1.68571 27.8137 4.68629C30.8143 7.68687 32.5 11.7565 32.5 16Z">
+									</path>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 6C15.7652 6 16.0196 6.10536 16.2071 6.29289C16.3946 6.48043 16.5 6.73478 16.5 7V17.42L22.996 21.132C23.2196 21.2669 23.3815 21.4839 23.4473 21.7366C23.513 21.9893 23.4772 22.2577 23.3477 22.4844C23.2181 22.7111 23.0051 22.8782 22.754 22.9498C22.5029 23.0215 22.2337 22.9921 22.004 22.868L15.004 18.868C14.8509 18.7806 14.7237 18.6542 14.6352 18.5018C14.5467 18.3494 14.5001 18.1763 14.5 18V7C14.5 6.73478 14.6054 6.48043 14.7929 6.29289C14.9804 6.10536 15.2348 6 15.5 6Z">
+									</path>
+								</svg>
+								<h5 class="mb-4 text-light-1">
+									Save Time																
+								</h5>
+								<p class="mb-0 text-light-2">
+									Save time on the marketing on your Venue. Share the word and get more foot traffic.
+								</p>
+							</div>
+						</div>
+						<div class="mb-8 mb-md-0 col-lg-4 col-md-6" data-aos="fade-down" data-aos-delay="650">
+							<div class="ps-12 position-relative">
+								<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-action-1 position-absolute top-0 start-0">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 0H26.5C27.5609 0 28.5783 0.421427 29.3284 1.17157C30.0786 1.92172 30.5 2.93913 30.5 4V10C30.5 11.0609 30.0786 12.0783 29.3284 12.8284C28.5783 13.5786 27.5609 14 26.5 14H6.5C5.43913 14 4.42172 13.5786 3.67157 12.8284C2.92143 12.0783 2.5 11.0609 2.5 10V4C2.5 2.93913 2.92143 1.92172 3.67157 1.17157C4.42172 0.421427 5.43913 0 6.5 0V0ZM6.5 2C5.96957 2 5.46086 2.21071 5.08579 2.58579C4.71071 2.96086 4.5 3.46957 4.5 4V10C4.5 10.5304 4.71071 11.0391 5.08579 11.4142C5.46086 11.7893 5.96957 12 6.5 12H26.5C27.0304 12 27.5391 11.7893 27.9142 11.4142C28.2893 11.0391 28.5 10.5304 28.5 10V4C28.5 3.46957 28.2893 2.96086 27.9142 2.58579C27.5391 2.21071 27.0304 2 26.5 2H6.5ZM6.5 18H26.5C27.5609 18 28.5783 18.4214 29.3284 19.1716C30.0786 19.9217 30.5 20.9391 30.5 22V28C30.5 29.0609 30.0786 30.0783 29.3284 30.8284C28.5783 31.5786 27.5609 32 26.5 32H6.5C5.43913 32 4.42172 31.5786 3.67157 30.8284C2.92143 30.0783 2.5 29.0609 2.5 28V22C2.5 20.9391 2.92143 19.9217 3.67157 19.1716C4.42172 18.4214 5.43913 18 6.5 18ZM6.5 20C5.96957 20 5.46086 20.2107 5.08579 20.5858C4.71071 20.9609 4.5 21.4696 4.5 22V28C4.5 28.5304 4.71071 29.0391 5.08579 29.4142C5.46086 29.7893 5.96957 30 6.5 30H26.5C27.0304 30 27.5391 29.7893 27.9142 29.4142C28.2893 29.0391 28.5 28.5304 28.5 28V22C28.5 21.4696 28.2893 20.9609 27.9142 20.5858C27.5391 20.2107 27.0304 20 26.5 20H6.5Z">
+									</path>
+								</svg>
+								<h5 class="mb-4 text-light-1">
+									Built for your Venue
+								</h5>
+								<p class="mb-0 text-light-2">
+									Details that pertain to your venue and only your venue. Expandable to all of your needs
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6" data-aos="fade-down" data-aos-delay="750">
+							<div class="ps-12 position-relative">
+								<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-action-1 position-absolute top-0 start-0">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M16.5037 5.49414L15.0697 4.02014C11.7037 0.560144 5.5317 1.75414 3.3037 6.10414C2.2577 8.15014 2.0217 11.1041 3.9317 14.8741C5.7717 18.5041 9.5997 22.8521 16.5037 27.5881C23.4077 22.8521 27.2337 18.5041 29.0757 14.8741C30.9857 11.1021 30.7517 8.15014 29.7037 6.10414C27.4757 1.75414 21.3037 0.558144 17.9377 4.01814L16.5037 5.49414ZM16.5037 29.9981C-14.1623 9.73414 7.0617 -6.08186 16.1517 2.28414C16.2717 2.39414 16.3897 2.50814 16.5037 2.62614C16.6165 2.50825 16.734 2.39483 16.8557 2.28614C25.9437 -6.08586 47.1697 9.73214 16.5037 29.9981Z">
+									</path>
+								</svg>
+								<h5 class="mb-4 text-light-1">
+									Save Money																
+								</h5>
+								<p class="mb-0 text-light-2">
+									Save Money on your marketing. We designed the perfect network to help you market your Venue
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Pricing 3 -->
+				<section class="py-10 py-lg-20 bg-bg-1" id="pricing">
+					<div class="container">
+						<div class="row justify-content-center text-center">
+							<div class="col-md-9 col-lg-7 col-xl-6 col-xxl-5">
+								<h2 class="display-5 mb-6 text-light-1 text-decoration-underline" data-aos="fade-down" data-aos-delay="0">
+									Pricing
+								</h2>
+								<p class="mb-10 fs-2 text-light-2" data-aos="fade-down" data-aos-delay="150">
+									Help keep the app Advertisement free and free to download for all users in the App Store
+								</p>
+							</div>
+						</div>
+						<label class="form-check form-switch text-center mb-12" data-aos="fade-down" data-aos-delay="250">
+							<span class="form-check-label font-heading fs-4 me-4 text-light-1">
+Monthly
+							</span>
+							<input class="form-check-input form-control-lg" type="checkbox" name="switch" data-bs-target="#custom-id-o0928tch" checked="checked">
+							<span class="form-switch-wrapper">
+								<div class="form-switch-pin">
+								</div>
+							</span>
+							<span class="form-check-label ms-2 font-heading fs-4 text-light-1">
+Annually
+							</span>
+						</label>
+						<div id="custom-id-o0928tch" class="carousel slide carousel-fade" data-bs-interval="false" data-bs-touch="false" data-aos="fade-down" data-aos-delay="400">
+							<div class="carousel-inner">
+								<div class="carousel-item bg-bg-1">
+									<div class="row justify-content-center">
+										<div class="mb-4 mb-md-0 col-lg-5 col-md-6 col-sm-10">
+											<div class="d-flex flex-column justify-content-between h-100 p-6 border rounded-2 bg-dark-2 border-dark-2">
+												<div>
+													<h5 class="fs-3 fw-bold mb-2 text-light-1">
+														Bars
+													</h5>
+													<h2 class="display-6 mb-6 text-light-1">
+														$250/month
+													</h2>
+													<div class="mb-6 border-bottom border-light-3">
+													</div>
+													<div class="position-relative mb-5">
+														<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute top-50 translate-middle-y fill-light-1">
+															<path d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z">
+															</path>
+														</svg>
+														<h6 class="ps-7 text-light-1">
+															Promote your bar
+														</h6>
+													</div>
+													<div class="position-relative mb-5">
+														<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute top-50 translate-middle-y fill-light-1">
+															<path d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z">
+															</path>
+														</svg>
+														<h6 class="ps-7 text-light-1">
+															Increase foot traffic
+														</h6>
+													</div>
+												</div>
+												<a href="#" class="mt-6 mt-lg-12 btn w-100 btn-bg-3">
+									Get Started
+												</a>
+											</div>
+										</div>
+										<div class="col-lg-5 col-md-6 col-sm-10">
+											<div class="d-flex flex-column justify-content-between h-100 p-6 border rounded-2 border-light-3">
+												<div>
+													<h5 class="fs-3 fw-bold mb-2 text-action-8">
+														Greek Life
+													</h5>
+													<h2 class="display-6 mb-6 text-light-1">
+														$300/month
+													</h2>
+													<div class="mb-6 border-bottom border-light-3">
+													</div>
+													<div class="position-relative mb-5">
+														<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-action-8 position-absolute top-50 translate-middle-y">
+															<path d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z">
+															</path>
+														</svg>
+														<h6 class="ps-7 text-light-1">
+															Promote Philanthropy Events
+														</h6>
+													</div>
+													<div class="position-relative mb-5">
+														<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-action-8 position-absolute top-50 translate-middle-y">
+															<path d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z">
+															</path>
+														</svg>
+														<h6 class="ps-7 text-light-1">
+															Increase Donations
+														</h6>
+													</div>
+													<div class="position-relative mb-5">
+														<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-action-8 position-absolute top-50 translate-middle-y">
+															<path d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z">
+															</path>
+														</svg>
+														<h6 class="ps-7 text-light-1">
+															Show location of Events
+														</h6>
+													</div>
+												</div>
+												<a href="#" class="mt-6 mt-lg-12 btn w-100 btn-action-8">
+									Get Started
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item active bg-bg-1">
+									<div class="row justify-content-center">
+										<div class="mb-4 mb-md-0 col-lg-5 col-md-6 col-sm-10">
+											<div class="d-flex flex-column justify-content-between h-100 p-6 border rounded-2 bg-dark-2 border-dark-2">
+												<div>
+													<h5 class="fs-3 fw-bold mb-2 text-light-1">
+														Bars
+													</h5>
+													<h2 class="display-6 mb-6 text-light-1">
+														$2500/year
+													</h2>
+													<div class="mb-6 border-bottom border-light-3">
+													</div>
+													<div class="position-relative mb-5">
+														<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute top-50 translate-middle-y fill-light-1">
+															<path d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z">
+															</path>
+														</svg>
+														<h6 class="ps-7 text-light-1">
+															Promote your Bar
+														</h6>
+													</div>
+													<div class="position-relative mb-5">
+														<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute top-50 translate-middle-y fill-light-1">
+															<path d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z">
+															</path>
+														</svg>
+														<h6 class="ps-7 text-light-1">
+															Increase foot traffic
+														</h6>
+													</div>
+												</div>
+												<a href="#" class="mt-6 mt-lg-12 btn w-100 btn-bg-3">
+									Get Started
+												</a>
+											</div>
+										</div>
+										<div class="col-lg-5 col-md-6 col-sm-10">
+											<div class="d-flex flex-column justify-content-between h-100 p-6 border rounded-2 border-light-3">
+												<div>
+													<h5 class="fs-3 fw-bold mb-2 text-action-8">
+														Greek Life
+													</h5>
+													<h2 class="display-6 mb-6 text-light-1">
+														$3000/year
+													</h2>
+													<div class="mb-6 border-bottom border-light-3">
+													</div>
+													<div class="position-relative mb-5">
+														<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-action-8 position-absolute top-50 translate-middle-y">
+															<path d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z">
+															</path>
+														</svg>
+														<h6 class="ps-7 text-light-1">
+															Promote Philanthropy Events
+														</h6>
+													</div>
+													<div class="position-relative mb-5">
+														<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-action-8 position-absolute top-50 translate-middle-y">
+															<path d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z">
+															</path>
+														</svg>
+														<h6 class="ps-7 text-light-1">
+															Increase Donations
+														</h6>
+													</div>
+													<div class="position-relative mb-5">
+														<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-action-8 position-absolute top-50 translate-middle-y">
+															<path d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z">
+															</path>
+														</svg>
+														<h6 class="ps-7 text-light-1">
+															Show location of Events
+														</h6>
+													</div>
+												</div>
+												<a href="#" class="mt-6 mt-lg-12 btn w-100 btn-action-8">
+									Get Started
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Contact 5 -->
+					<section class="py-10 py-lg-20 bg-bg-1" id="contact">
+						<div class="container">
+							<div class="row justify-content-between align-items-center flex-md-row-reverse">
+								<div class="col-lg-5 col-md-6 mb-12 mb-md-0">
+									<h2 class="display-5 mb-6 text-light-1" data-aos="fade-down" data-aos-delay="0">
+										Local Roots - Contact
+									</h2>
+									<p class="fs-1 mb-8 text-light-2" data-aos="fade-down" data-aos-delay="150">
+										Originated at Ole Miss in Oxford, Mississippi
+									</p>
+									<div class="position-relative mb-5" data-aos="fade-down" data-aos-delay="250">
+										<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-1 position-absolute top-0 start-0">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M17 2H8C7.60218 2 7.22064 2.15804 6.93934 2.43934C6.65804 2.72064 6.5 3.10218 6.5 3.5V21.5C6.5 21.8978 6.65804 22.2794 6.93934 22.5607C7.22064 22.842 7.60218 23 8 23H17C17.3978 23 17.7794 22.842 18.0607 22.5607C18.342 22.2794 18.5 21.8978 18.5 21.5V3.5C18.5 3.10218 18.342 2.72064 18.0607 2.43934C17.7794 2.15804 17.3978 2 17 2ZM8 0.5C7.20435 0.5 6.44129 0.816071 5.87868 1.37868C5.31607 1.94129 5 2.70435 5 3.5V21.5C5 22.2956 5.31607 23.0587 5.87868 23.6213C6.44129 24.1839 7.20435 24.5 8 24.5H17C17.7956 24.5 18.5587 24.1839 19.1213 23.6213C19.6839 23.0587 20 22.2956 20 21.5V3.5C20 2.70435 19.6839 1.94129 19.1213 1.37868C18.5587 0.816071 17.7956 0.5 17 0.5L8 0.5Z" fill="#3C7EFF">
+											</path>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 21.5C12.8978 21.5 13.2794 21.342 13.5607 21.0607C13.842 20.7794 14 20.3978 14 20C14 19.6022 13.842 19.2206 13.5607 18.9393C13.2794 18.658 12.8978 18.5 12.5 18.5C12.1022 18.5 11.7206 18.658 11.4393 18.9393C11.158 19.2206 11 19.6022 11 20C11 20.3978 11.158 20.7794 11.4393 21.0607C11.7206 21.342 12.1022 21.5 12.5 21.5Z" fill="#3C7EFF">
+											</path>
+										</svg>
+										<p class="ps-10 mb-0 fs-4 text-light-1">
+											+1 662 715 3398
+										</p>
+									</div>
+									<div class="position-relative mb-5" data-aos="fade-down" data-aos-delay="400">
+										<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-1 position-absolute top-0 start-0">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M21.5002 5H3.50024C3.10242 5 2.72089 5.15804 2.43958 5.43934C2.15828 5.72064 2.00024 6.10218 2.00024 6.5V6.82525L12.5002 13.1255L23.0002 6.82518V6.5C23.0002 6.10218 22.8422 5.72064 22.5609 5.43934C22.2796 5.15804 21.8981 5 21.5002 5ZM0.500244 7.27068C0.499919 7.25793 0.499919 7.24517 0.500244 7.23241V6.5C0.500244 5.70435 0.816315 4.94129 1.37892 4.37868C1.94153 3.81607 2.70459 3.5 3.50024 3.5H21.5002C22.2959 3.5 23.059 3.81607 23.6216 4.37868C24.1842 4.94129 24.5002 5.70435 24.5002 6.5V7.2394V7.2606V18.5C24.5002 19.2956 24.1842 20.0587 23.6216 20.6213C23.059 21.1839 22.2959 21.5 21.5002 21.5H3.50024C2.70459 21.5 1.94153 21.1839 1.37892 20.6213C0.816315 20.0587 0.500244 19.2956 0.500244 18.5V7.27068ZM23.0002 17.194V8.57474L15.7162 12.945L23.0002 17.194ZM22.9461 18.8995L14.3722 13.898L14.2482 13.8257L12.5002 14.8745L10.7519 13.8258L10.6282 13.898L2.05439 18.8994C2.12287 19.1473 2.25456 19.3756 2.43958 19.5607C2.72089 19.842 3.10242 20 3.50024 20H21.5002C21.8981 20 22.2796 19.842 22.5609 19.5607C22.7459 19.3757 22.8776 19.1473 22.9461 18.8995ZM2.00024 17.194V8.57616L9.28386 12.9452L2.00024 17.194Z" fill="#3C7EFF">
+											</path>
+										</svg>
+										<p class="ps-10 mb-0 fs-4 text-light-1">
+											larson@carter.tech
+										</p>
+									</div>
+									<div class="position-relative" data-aos="fade-down" data-aos-delay="500">
+										<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-1 position-absolute top-0 start-0">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M24.2255 0.919479C24.3114 0.989882 24.3805 1.07848 24.428 1.17887C24.4755 1.27925 24.5001 1.38893 24.5 1.49998V21C24.4999 21.1733 24.4398 21.3412 24.3298 21.4752C24.2199 21.6092 24.067 21.701 23.897 21.735L16.397 23.235C16.3 23.2543 16.2 23.2543 16.103 23.235L8.75 21.765L1.397 23.235C1.28823 23.2567 1.176 23.2541 1.06838 23.2272C0.960764 23.2003 0.860444 23.15 0.774649 23.0797C0.688854 23.0093 0.61972 22.9209 0.572228 22.8207C0.524735 22.7204 0.500067 22.6109 0.5 22.5V2.99998C0.500105 2.82666 0.560234 2.65873 0.670165 2.52473C0.780096 2.39074 0.933042 2.29895 1.103 2.26498L8.603 0.764979C8.70004 0.745583 8.79996 0.745583 8.897 0.764979L16.25 2.23498L23.603 0.764979C23.7117 0.743103 23.824 0.745613 23.9316 0.772329C24.0392 0.799045 24.1396 0.849301 24.2255 0.919479ZM15.5 3.61498L9.5 2.41498V20.385L15.5 21.585V3.61498ZM17 21.585L23 20.385V2.41498L17 3.61498V21.585ZM8 20.385V2.41498L2 3.61498V21.585L8 20.385Z" fill="#3C7EFF">
+											</path>
+										</svg>
+										<p class="ps-10 mb-0 fs-4 remove-br text-light-1">
+											Oxford, MS
+										</p>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 pe-md-12 pe-lg-3 align-self-stretch" data-aos="fade-down" data-aos-delay="650">
+									<iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52703.885378832565!2d-89.5770075202134!3d34.35066041270206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88807b6ff0a7a1d9%3A0x76e49b3232dbaf1d!2sOxford%2C%20MS%2038655!5e0!3m2!1sen!2sus!4v1685832885876!5m2!1sen!2sus" scrolling="no" data-aos="fade-down" data-aos-delay="650" style="min-height:27rem;">
+									</iframe>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- Footer 8 -->
+						<footer class="pt-md-10 py-8 text-center text-lg-start bg-bg-1">
+							<div class="container">
+								<div class="row flex-column flex-lg-row align-items-center justify-content-center">
+									<div class="mb-4 mb-lg-0 col-lg-5 order-1 order-lg-0" data-aos="fade-down" data-aos-delay="0">
+										<a href="#" class="font-heading me-4 text-light-1">
+Home
+										</a>
+										<a href="#features" class="font-heading mx-4 text-light-1">
+Features
+										</a>
+										<a href="#pricing" class="font-heading mx-4 text-light-1">
+											Pricing
+										</a>
+										<a href="#contact" class="font-heading ms-4 text-light-1">
+											Contact
+										</a>
+									</div>
+									<div class="mb-4 mb-lg-0 col-lg-2 text-center order-0 order-lg-1" data-aos="fade-down" data-aos-delay="150">
+										<a href="#">
+											<img src="i/icon-with-name.png" alt="" class="img-fluid w-50 h-50 #home">
+										</a>
+									</div>
+									<div class="col-lg-5 text-lg-end order-2" data-aos="fade-down" data-aos-delay="250">
+										<a href="#" class="btn btn-action-1">
+											Download
+										</a>
+									</div>
+								</div>
+								<div class="mt-10 mb-8 border-bottom border-light-3" data-aos="fade-down" data-aos-delay="400">
+								</div>
+								<p class="text-center fs-5 mb-0 text-light-2" data-aos="fade-down" data-aos-delay="500">
+									Copyright © 2023 venuezapp.com
+								</p>
+							</div>
+						</footer>
 
-<!--============================
-=            Footer            =
-=============================-->
-<footer>
-  <div class="footer-main">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-12 m-md-auto align-self-center">
-          <div class="block">
-            <a href="index.html"><img src="images/logo-alt.png" alt="footer-logo"></a>
-            <!-- Social Site Icons -->
-            <ul class="social-icon list-inline">
-              <li class="list-inline-item">
-                <a href="https://www.facebook.com/themefisher"><i class="ti-facebook"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://twitter.com/themefisher"><i class="ti-twitter"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.instagram.com/themefisher/"><i class="ti-instagram"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
-          <div class="block-2">
-            <!-- heading -->
-            <h6>Product</h6>
-            <!-- links -->
-            <ul>
-              <li><a href="team.html">Teams</a></li>
-              <li><a href="blog.html">Blogs</a></li>
-              <li><a href="FAQ.html">FAQs</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
-          <div class="block-2">
-            <!-- heading -->
-            <h6>Resources</h6>
-            <!-- links -->
-            <ul>
-              <li><a href="sign-up.html">Singup</a></li>
-              <li><a href="sign-in.html">Login</a></li>
-              <li><a href="blog.html">Blog</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
-          <div class="block-2">
-            <!-- heading -->
-            <h6>Company</h6>
-            <!-- links -->
-            <ul>
-              <li><a href="career.html">Career</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="team.html">Investor</a></li>
-              <li><a href="privacy.html">Terms</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
-          <div class="block-2">
-            <!-- heading -->
-            <h6>Company</h6>
-            <!-- links -->
-            <ul>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="team.html">Team</a></li>
-              <li><a href="privacy-policy.html">Privacy Policy</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="text-center bg-dark py-4">
-    <small class="text-secondary">Copyright &copy; <script>document.write(new Date().getFullYear())</script>. Designed &amp; Developed by <a href="https://themefisher.com/">Themefisher</a></small class="text-secondary">
-  </div>
+		<!-- Bootstrap JS -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 
-	<div class="text-center bg-dark py-1">
-   <small> <p>Distributed By <a href="https://themewagon.com/">Themewagon</a></p></small class="text-secondary">
-  </div>
-</footer>
+		<!-- AOS 3.0.0-beta.6 plugin JS (Animations) -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		
+		<!-- Startup JS (Custom js for all blocks) - Remove ".min" if you want to edit a JS code -->
+		<script src="js/scripts.min.js"></script>
 
-
-  <!-- To Top -->
-  <div class="scroll-top-to">
-    <i class="ti-angle-up"></i>
-  </div>
-  
-  <!-- JAVASCRIPTS -->
-  <script src="plugins/jquery/jquery.min.js"></script>
-  <script src="plugins/bootstrap/bootstrap.min.js"></script>
-  <script src="plugins/slick/slick.min.js"></script>
-  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
-  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
-  <script src="plugins/aos/aos.js"></script>
-  <!-- google map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
-  <script src="plugins/google-map/gmap.js"></script>
-  
-  <script src="js/script.js"></script>
-</body>
-
+	</body>
 </html>
